@@ -1,0 +1,46 @@
+body {
+	font-family: 'Arial';
+	margin: 0;
+}
+.container {
+	margin: 10px;
+	display: inline-block;
+	/*border: 1px solid gray;*/
+	padding: 20px;
+}
+.container > div {
+	margin-bottom: 10px;
+}
+.faq {
+	width: 800px;
+	margin: 40px 0px;
+}
+.faq > div {
+	border: 1px solid #b6b6b6;
+	padding: 4px;
+	margin-bottom: 4px;
+	white-space: pre-wrap;
+}
+.faq > button {
+	margin-left: 10px;
+}
+button:not(:disabled) {
+	cursor: pointer;
+}
+
+.notification {
+	color: green;
+	opacity: 0;
+}
+.visible {
+	animation: cssAnimation 2s forwards;
+}
+@keyframes cssAnimation {
+	0% {opacity: 1}
+	80% {opacity: 1}
+	100% {opacity: 0}
+}
+
+.add {
+	margin-left: 15px;
+}
